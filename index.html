@@ -6701,90 +6701,104 @@
               </div>
             </div>
             <div id="contact-formfields" class="faq-accordion-div-3">
-              <div data-r="cols2" class="cols2-div">
-                <label class="label"
-                  >Full name<input
-                    placeholder="Jane Smith"
-                    class="input"
-                    style-focus="border-color:#F25C1A"
-                /></label>
-                <!-- <label class="label"
-                  >Company<input
-                    placeholder="Acme Goods Co."
-                    class="input"
-                    style-focus="border-color:#F25C1A"
-                /></label> -->
-                <label class="label"
-                  >Website<input
-                    placeholder="acmegoods.com"
-                    class="input"
-                    style-focus="border-color:#F25C1A"
-                /></label>
-                <!-- <label
-                class="ks-style-255">eCommerce
-                platform<select
-                  class="ks-style-256">
-                  <option>Shopify</option>
-                  <option>WooCommerce</option>
-                  <option>Magento</option>
-                  <option>BigCommerce</option>
-                  <option>Amazon / Marketplaces</option>
-                  <option>Multiple platforms</option>
-                  <option>Other</option>
-                </select></label> -->
-                <!-- <label
-                  class="label"
-                  >Monthly orders<select
-                    class="select"
-                  >
-                    <option>Under 500</option>
-                    <option>500 – 2,000</option>
-                    <option>2,000 – 10,000</option>
-                    <option>10,000 – 50,000</option>
-                    <option>50,000+</option>
-                  </select></label
-                > -->
-                <!-- <label class="label"
-                  >Country<select class="select">
-                    <option>United States</option>
-                    <option>Canada</option>
-                    <option>United Kingdom</option>
-                    <option>Australia</option>
-                    <option>Europe</option>
-                    <option>Other</option>
-                  </select></label
-                > -->
-                <label class="label"
-                  >Work email<input
-                    placeholder="jane@acmegoods.com"
-                    class="input"
-                    style-focus="border-color:#F25C1A"
-                /></label>
-                <label class="label"
-                  >Phone<input
-                    placeholder="+1 (555) 000-0000"
-                    class="input"
-                    style-focus="border-color:#F25C1A"
-                /></label>
-                <label class="label-2"
-                  >What's your biggest operational headache?<textarea
-                    rows="4"
-                    placeholder="e.g. Our inventory counts are never right and we oversell every month..."
-                    class="textarea"
-                    style-focus="border-color:#F25C1A"
-                  ></textarea>
-                </label>
-              </div>
-              <button
-                onclick="submitForm()"
-                class="contact-formfields-button"
-                style-hover="background:#D94E12;transform:translateY(-1px)"
+              <form
+                onsubmit="
+                  event.preventDefault();
+                  submitForm();
+                "
               >
-                Book Free ERP Consultation
-              </button>
-              <p class="contact-formfields-p">
-                No spam. No obligation. We reply within one business day.
-              </p>
+                <div data-r="cols2" class="cols2-div">
+                  <label class="label"
+                    >Full name<input
+                      required
+                      placeholder="Jane Smith"
+                      class="input"
+                      style-focus="border-color:#F25C1A"
+                  /></label>
+                  <!-- <label class="label"
+                    >Company<input
+                      placeholder="Acme Goods Co."
+                      class="input"
+                      style-focus="border-color:#F25C1A"
+                  /></label> -->
+                  <label class="label"
+                    >Website<input
+                      required
+                      placeholder="acmegoods.com"
+                      class="input"
+                      style-focus="border-color:#F25C1A"
+                  /></label>
+                  <!-- <label
+                  class="ks-style-255">eCommerce
+                  platform<select
+                    class="ks-style-256">
+                    <option>Shopify</option>
+                    <option>WooCommerce</option>
+                    <option>Magento</option>
+                    <option>BigCommerce</option>
+                    <option>Amazon / Marketplaces</option>
+                    <option>Multiple platforms</option>
+                    <option>Other</option>
+                  </select></label> -->
+                  <!-- <label
+                    class="label"
+                    >Monthly orders<select
+                      class="select"
+                    >
+                      <option>Under 500</option>
+                      <option>500 – 2,000</option>
+                      <option>2,000 – 10,000</option>
+                      <option>10,000 – 50,000</option>
+                      <option>50,000+</option>
+                    </select></label
+                  > -->
+                  <!-- <label class="label"
+                    >Country<select class="select">
+                      <option>United States</option>
+                      <option>Canada</option>
+                      <option>United Kingdom</option>
+                      <option>Australia</option>
+                      <option>Europe</option>
+                      <option>Other</option>
+                    </select></label
+                  > -->
+                  <label class="label"
+                    >Work email<input
+                      type="email"
+                      required
+                      placeholder="jane@acmegoods.com"
+                      class="input"
+                      style-focus="border-color:#F25C1A"
+                  /></label>
+                  <label class="label"
+                    >Phone<input
+                      type="tel"
+                      required
+                      placeholder="+1 (555) 000-0000"
+                      class="input"
+                      style-focus="border-color:#F25C1A"
+                  /></label>
+                  <label class="label-2"
+                    >What's your biggest operational headache?<textarea
+                      required
+                      rows="4"
+                      placeholder="e.g. Our inventory counts are never right and we oversell every month..."
+                      class="textarea"
+                      style-focus="border-color:#F25C1A"
+                    ></textarea>
+                  </label>
+                </div>
+                <button
+                  type="submit"
+                  class="contact-formfields-button"
+                  style-hover="background:#D94E12;transform:translateY(-1px)"
+                >
+                  Book Free ERP Consultation
+                </button>
+                <p class="contact-formfields-p">
+                  No spam. No obligation. We reply within one business day.
+                </p>
+              </form>
             </div>
           </div>
         </div>
@@ -6824,7 +6838,7 @@
               Helping growing eCommerce businesses automate operations with
               AI-powered Odoo ERP.
             </p>
-            <p class="footgrid-p-2">odoo.kretoss.com</p>
+            <!-- <p class="footgrid-p-2">odoo.kretoss.com</p> -->
           </div>
           <div>
             <p class="footgrid-p-3">SOLUTIONS</p>
@@ -6995,6 +7009,8 @@
             phone: inputs[3] ? inputs[3].value : "",
             headache: inputs[4] ? inputs[4].value : "",
           };
+
+          dataObj.source = "Kretoss Odoo";
 
           // Replace this with your actual Node.js backend API URL
           const apiUrl =
