@@ -2802,6 +2802,152 @@
         margin: 0 0 14px;
       }
 
+      .scorecard-widget {
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 12px;
+        padding: 24px;
+        margin-bottom: 32px;
+      }
+      .scorecard-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 14px;
+      }
+      .scorecard-title {
+        color: #9ba8c4;
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+      }
+      .scorecard-score {
+        color: #9ba8c4;
+        font-size: 12px;
+        font-weight: 800;
+      }
+      .scorecard-score-highlight {
+        color: #f25c1a;
+        font-size: 18px;
+        font-weight: 800;
+      }
+      .scorecard-row {
+        margin-bottom: 11px;
+      }
+      .scorecard-row-last {
+        margin-bottom: 0px;
+      }
+      .scorecard-row-header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 8px;
+        font-size: 12px;
+        color: #fff;
+        font-weight: 600;
+      }
+      .scorecard-row-value-orange {
+        color: #f25c1a;
+      }
+      .scorecard-row-value-green {
+        color: rgb(14, 159, 110);
+      }
+      .scorecard-bar-container {
+        height: 6px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 3px;
+        position: relative;
+      }
+      .scorecard-bar {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        border-radius: 3px;
+      }
+      .scorecard-bar-orange {
+        background-color: #f25c1a;
+      }
+      .scorecard-bar-grey {
+        background-color: #8e9bae;
+      }
+      .scorecard-bar-green {
+        background-color: rgb(14, 159, 110);
+      }
+
+      .next-steps-widget {
+        background: #fff;
+        border: 1px solid #eaedf3;
+        border-radius: 12px;
+        padding: 24px;
+        margin-top: 32px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+      }
+      .next-steps-title {
+        color: #9ba8c4;
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        margin: 0 0 24px;
+        text-transform: uppercase;
+      }
+      .next-step-item {
+        display: flex;
+        gap: 16px;
+        position: relative;
+        margin-bottom: 24px;
+      }
+      .next-step-item:last-child {
+        margin-bottom: 0;
+      }
+      .next-step-line {
+        position: absolute;
+        left: 15px;
+        top: 32px;
+        bottom: -24px;
+        width: 2px;
+        background-color: #eaedf3;
+      }
+      .next-step-item:last-child .next-step-line {
+        display: none;
+      }
+      .next-step-number {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-weight: 700;
+        font-size: 14px;
+        flex: none;
+        position: relative;
+        z-index: 1;
+      }
+      .next-step-number-1 {
+        background-color: #f25c1a;
+      }
+      .next-step-number-2 {
+        background-color: #0b1f3f;
+      }
+      .next-step-number-3 {
+        background-color: rgb(14, 159, 110);
+      }
+      .next-step-content {
+        padding-top: 4px;
+      }
+      .next-step-heading {
+        color: #0b1f3f;
+        font-size: 15px;
+        font-weight: 800;
+        margin: 0 0 6px;
+      }
+      .next-step-desc {
+        color: #8e9bae;
+        font-size: 14px;
+        margin: 0;
+      }
+
       .footgrid-div-3 {
         display: flex;
         flex-direction: column;
@@ -3303,6 +3449,14 @@
           padding: 19px 20px !important;
         }
 
+        .scorecard-widget {
+          padding: 16px !important;
+        }
+
+        .next-steps-widget {
+          padding: 16px !important;
+        }
+
         .pad-div-30 {
           padding: 38px 12px !important;
         }
@@ -3359,11 +3513,12 @@
   <body>
     <header class="body-header">
       <div data-r="navbar" class="navbar-div">
-        <a href="#top" class="navbar-a">
-          <span class="navbar-span">K</span>
-          <span class="navbar-span-2"
-            >Kretoss<span class="navbar-span-3">.</span></span
-          >
+        <a href="#hero" class="header-a">
+          <img
+            src="assets/kretoss-dark-logo.png"
+            alt="Kretoss SEO"
+            style="height: 48px; width: auto; object-fit: contain"
+          />
         </a>
         <nav data-r="navlinks" class="navlinks-nav">
           <a href="#solutions" class="navlinks-a" style-hover="color:#F25C1A"
@@ -3921,8 +4076,10 @@
               customer service — and none of it lives in your store.
             </p>
             <p class="split-p-3">
-              An ERP is the operational brain that connects all of it, so
-              decisions happen on real numbers — not last week's spreadsheet.
+              An AI-powered ERP is the intelligent operational brain that
+              connects all of it — predicting demand, flagging problems before
+              they happen, and letting decisions run on real numbers, not last
+              week's spreadsheet.
             </p>
           </div>
           <div class="split-div-2">
@@ -3975,9 +4132,10 @@
           <p class="pad-p">IN PLAIN ENGLISH</p>
           <h2 data-r="h2" class="pad-h2">What is Odoo?</h2>
           <p class="pad-p-3">
-            Odoo is an all-in-one business operating system. Instead of ten apps
-            that don't talk to each other, every department — sales, stock,
-            warehouse, money, customers — works from the same live data.
+            Odoo is an all-in-one, AI-enhanced business operating system.
+            Instead of ten apps that don't talk to each other, every department
+            — sales, stock, warehouse, money, customers — works from the same
+            live data, with AI automating the busywork in between.
           </p>
         </div>
         <div class="pad-div-4">
@@ -4068,7 +4226,8 @@
             </div>
           </div>
           <p class="pad-p-4">
-            One order in. Every department updated. Automatically.
+            One order in. Every department updated. Automatically — with AI
+            handling the busywork.
           </p>
         </div>
       </div>
@@ -4353,7 +4512,7 @@
         <div class="pad-div-12">
           <p class="pad-p-5">OUTCOMES</p>
           <h2 data-r="h2" class="pad-h2-2">
-            What changes after Odoo goes live
+            What changes after AI-powered Odoo goes live
           </h2>
         </div>
         <div data-r="cols3" class="cols3-div">
@@ -4367,6 +4526,36 @@
               Real-time counts across every channel and warehouse — no more
               surprise stockouts.
             </p>
+            <svg
+              data-dc-tpl="224"
+              width="100%"
+              height="44"
+              viewBox="0 0 200 44"
+              preserveAspectRatio="none"
+              style="display: block; margin-top: 16px"
+            >
+              <path
+                data-dc-tpl="225"
+                d="M4 34 L32 30 L60 32 L88 24 L116 20 L144 14 L172 10 L196 6 L196 44 L4 44 Z"
+                fill="rgba(14,159,110,.1)"
+              ></path>
+              <path
+                data-dc-tpl="226"
+                d="M4 34 L32 30 L60 32 L88 24 L116 20 L144 14 L172 10 L196 6"
+                fill="none"
+                stroke="#0E9F6E"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <circle
+                data-dc-tpl="227"
+                cx="196"
+                cy="6"
+                r="3.5"
+                fill="#0E9F6E"
+              ></circle>
+            </svg>
           </div>
 
           <div
@@ -4378,6 +4567,36 @@
             <p class="cols3-p">
               Orders route to the warehouse instantly with optimized pick paths.
             </p>
+            <svg
+              data-dc-tpl="224"
+              width="100%"
+              height="44"
+              viewBox="0 0 200 44"
+              preserveAspectRatio="none"
+              style="display: block; margin-top: 16px"
+            >
+              <path
+                data-dc-tpl="225"
+                d="M4 36 L32 34 L60 28 L88 30 L116 18 L144 16 L172 8 L196 5 L196 44 L4 44 Z"
+                fill="rgba(242,92,26,.1)"
+              ></path>
+              <path
+                data-dc-tpl="226"
+                d="M4 36 L32 34 L60 28 L88 30 L116 18 L144 16 L172 8 L196 5"
+                fill="none"
+                stroke="#F25C1A"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <circle
+                data-dc-tpl="227"
+                cx="196"
+                cy="5"
+                r="3.5"
+                fill="#F25C1A"
+              ></circle>
+            </svg>
           </div>
 
           <div
@@ -4390,6 +4609,36 @@
               Fewer subscriptions, fewer errors, and far fewer hours on manual
               work.
             </p>
+            <svg
+              data-dc-tpl="224"
+              width="100%"
+              height="44"
+              viewBox="0 0 200 44"
+              preserveAspectRatio="none"
+              style="display: block; margin-top: 16px"
+            >
+              <path
+                data-dc-tpl="225"
+                d="M4 8 L32 12 L60 10 L88 18 L116 24 L144 28 L172 32 L196 36 L196 44 L4 44 Z"
+                fill="rgba(11,31,63,.08)"
+              ></path>
+              <path
+                data-dc-tpl="226"
+                d="M4 8 L32 12 L60 10 L88 18 L116 24 L144 28 L172 32 L196 36"
+                fill="none"
+                stroke="#0B1F3F"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <circle
+                data-dc-tpl="227"
+                cx="196"
+                cy="36"
+                r="3.5"
+                fill="#0B1F3F"
+              ></circle>
+            </svg>
           </div>
 
           <div
@@ -4402,6 +4651,36 @@
               Orders, invoices and stock moves post themselves. Your team
               reviews, not re-types.
             </p>
+            <svg
+              data-dc-tpl="224"
+              width="100%"
+              height="44"
+              viewBox="0 0 200 44"
+              preserveAspectRatio="none"
+              style="display: block; margin-top: 16px"
+            >
+              <path
+                data-dc-tpl="225"
+                d="M4 10 L32 14 L60 20 L88 18 L116 26 L144 30 L172 34 L196 38 L196 44 L4 44 Z"
+                fill="rgba(242,92,26,.1)"
+              ></path>
+              <path
+                data-dc-tpl="226"
+                d="M4 10 L32 14 L60 20 L88 18 L116 26 L144 30 L172 34 L196 38"
+                fill="none"
+                stroke="#F25C1A"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <circle
+                data-dc-tpl="227"
+                cx="196"
+                cy="38"
+                r="3.5"
+                fill="#F25C1A"
+              ></circle>
+            </svg>
           </div>
 
           <div
@@ -4414,6 +4693,36 @@
               Margins, cash flow and channel performance — live, not at
               month-end.
             </p>
+            <svg
+              data-dc-tpl="224"
+              width="100%"
+              height="44"
+              viewBox="0 0 200 44"
+              preserveAspectRatio="none"
+              style="display: block; margin-top: 16px"
+            >
+              <path
+                data-dc-tpl="225"
+                d="M4 32 L32 26 L60 28 L88 20 L116 22 L144 12 L172 10 L196 7 L196 44 L4 44 Z"
+                fill="rgba(11,31,63,.08)"
+              ></path>
+              <path
+                data-dc-tpl="226"
+                d="M4 32 L32 26 L60 28 L88 20 L116 22 L144 12 L172 10 L196 7"
+                fill="none"
+                stroke="#0B1F3F"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <circle
+                data-dc-tpl="227"
+                cx="196"
+                cy="7"
+                r="3.5"
+                fill="#0B1F3F"
+              ></circle>
+            </svg>
           </div>
 
           <div
@@ -4425,6 +4734,36 @@
             <p class="cols3-p">
               The same team handles double the order volume without hiring.
             </p>
+            <svg
+              data-dc-tpl="224"
+              width="100%"
+              height="44"
+              viewBox="0 0 200 44"
+              preserveAspectRatio="none"
+              style="display: block; margin-top: 16px"
+            >
+              <path
+                data-dc-tpl="225"
+                d="M4 36 L32 32 L60 26 L88 26 L116 18 L144 14 L172 12 L196 6 L196 44 L4 44 Z"
+                fill="rgba(14,159,110,.1)"
+              ></path>
+              <path
+                data-dc-tpl="226"
+                d="M4 36 L32 32 L60 26 L88 26 L116 18 L144 14 L172 12 L196 6"
+                fill="none"
+                stroke="#0E9F6E"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <circle
+                data-dc-tpl="227"
+                cx="196"
+                cy="6"
+                r="3.5"
+                fill="#0E9F6E"
+              ></circle>
+            </svg>
           </div>
         </div>
       </div>
@@ -4720,8 +5059,8 @@
           </div>
         </div>
         <p class="pad-p-8">
-          Average time from order to shipping label: under 4 minutes — with zero
-          manual entry.
+          Average time from order to shipping label: under 4 minutes —
+          AI-orchestrated, with zero manual entry.
         </p>
       </div>
     </section>
@@ -6092,8 +6431,8 @@
             <p class="split-p-9">
               Walk us through how your business runs today. We'll map your
               order-to-cash flow, spot where money and hours are leaking, and
-              show you exactly what Odoo would change — no pitch deck, no
-              obligation.
+              show you exactly what AI-powered Odoo would automate — no pitch
+              deck, no obligation.
             </p>
             <a
               href="#contact"
@@ -6103,6 +6442,53 @@
             >
           </div>
           <div class="split-div-27">
+            <div class="scorecard-widget">
+              <div class="scorecard-header">
+                <span class="scorecard-title">SAMPLE AUDIT SCORECARD</span>
+                <span class="scorecard-score"
+                  ><span class="scorecard-score-highlight">62</span>/100</span
+                >
+              </div>
+
+              <div class="scorecard-row">
+                <div class="scorecard-row-header">
+                  <span>Manual work hours</span>
+                  <span class="scorecard-row-value-orange">High</span>
+                </div>
+                <div class="scorecard-bar-container">
+                  <div
+                    class="scorecard-bar scorecard-bar-orange"
+                    style="width: 75%"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="scorecard-row">
+                <div class="scorecard-row-header">
+                  <span>Inventory accuracy</span>
+                  <span class="scorecard-row-value-orange">71%</span>
+                </div>
+                <div class="scorecard-bar-container">
+                  <div
+                    class="scorecard-bar scorecard-bar-grey"
+                    style="width: 71%"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="scorecard-row-last">
+                <div class="scorecard-row-header">
+                  <span>AI automation potential</span>
+                  <span class="scorecard-row-value-green">Very high</span>
+                </div>
+                <div class="scorecard-bar-container">
+                  <div
+                    class="scorecard-bar scorecard-bar-green"
+                    style="width: 90%"
+                  ></div>
+                </div>
+              </div>
+            </div>
             <p class="split-p-10">YOU'LL WALK AWAY WITH</p>
             <div class="split-div-28">
               <div class="split-div-29">
@@ -6250,6 +6636,37 @@
                 ><span class="sticky-span">Your data stays confidential</span>
               </div>
             </div>
+
+            <!-- <div class="next-steps-widget">
+              <p class="next-steps-title">What happens next</p>
+              
+              <div class="next-step-item">
+                <div class="next-step-line"></div>
+                <div class="next-step-number next-step-number-1">1</div>
+                <div class="next-step-content">
+                  <h4 class="next-step-heading">You send the form</h4>
+                  <p class="next-step-desc">Takes 2 minutes. No prep needed.</p>
+                </div>
+              </div>
+              
+              <div class="next-step-item">
+                <div class="next-step-line"></div>
+                <div class="next-step-number next-step-number-2">2</div>
+                <div class="next-step-content">
+                  <h4 class="next-step-heading">Free 30-min audit call</h4>
+                  <p class="next-step-desc">We map your operations and spot the leaks.</p>
+                </div>
+              </div>
+              
+              <div class="next-step-item">
+                <div class="next-step-line"></div>
+                <div class="next-step-number next-step-number-3">3</div>
+                <div class="next-step-content">
+                  <h4 class="next-step-heading">Your AI automation roadmap</h4>
+                  <p class="next-step-desc">Scope, timeline and budget — yours to keep.</p>
+                </div>
+              </div>
+            </div> -->
           </div>
           <div class="split-div-31">
             <div id="contact-thankyou" class="faq-accordion-div-4">
@@ -6380,8 +6797,8 @@
           Ready to scale your eCommerce operations?
         </h2>
         <p class="pad-p-9">
-          Join the brands that replaced spreadsheet chaos with one connected
-          platform.
+          Join the brands that replaced spreadsheet chaos with one connected,
+          AI-powered platform.
         </p>
         <a
           href="#contact"
@@ -6397,14 +6814,15 @@
         <div data-r="footgrid" class="footgrid-div">
           <div>
             <div class="footgrid-div-2">
-              <span class="footgrid-span">K</span>
-              <span class="footgrid-span-2"
-                >Kretoss<span class="navbar-span-3">.</span></span
-              >
+              <img
+                src="assets/footer_logo.png"
+                alt="Kretoss Technology"
+                style="height: 48px; width: auto; object-fit: contain"
+              />
             </div>
             <p class="footgrid-p">
-              Helping growing eCommerce businesses automate operations with Odoo
-              ERP.
+              Helping growing eCommerce businesses automate operations with
+              AI-powered Odoo ERP.
             </p>
             <p class="footgrid-p-2">odoo.kretoss.com</p>
           </div>
@@ -6578,7 +6996,11 @@
             headache: inputs[4] ? inputs[4].value : "",
           };
 
-          fetch("http://localhost:3000/api/contact", {
+          // Replace this with your actual Node.js backend API URL
+          const apiUrl =
+            "https://kretossadminapi.kretosstechnology.com/api/v1/send-mail";
+
+          fetch(apiUrl, {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
